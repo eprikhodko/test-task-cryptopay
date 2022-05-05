@@ -42,3 +42,9 @@
     margin: 40px 0 24px;
   }
 }
+
+.header__title {
+  @media (max-width: $mobile-big-width) {
+    position: absolute;
+  }
+}
