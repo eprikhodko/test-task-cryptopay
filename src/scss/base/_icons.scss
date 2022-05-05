@@ -1,16 +1,28 @@
+@use '../abstracts/constants' as *;
+
 .ico {
   display: inline-block;
 }
-
-// .ico__navigation {
-//   margin-right: 16px;
-// }
 
 .ico_active-rectangle {
   position: absolute;
   width: 4px;
   height: 56px;
   background-image: url('../assets/img/icons/Rectangle-638.svg');
+
+  @media (max-width: $tablet-medium-width) {
+    display: none;
+  }
+}
+
+.icon-square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  background: $color-off-white;
+  border-radius: 16px;
 }
 
 .ico_home {
