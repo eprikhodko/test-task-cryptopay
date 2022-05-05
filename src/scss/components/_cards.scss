@@ -7,10 +7,17 @@
 
   @media (max-width: $tablet-big-width) {
     grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
   }
 
   @media (max-width: $tablet-width) {
     grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  @media (max-width: $mobile-big-width) {
+    grid-template-columns: 1fr;
+    gap: 16px;
   }
 }
 
