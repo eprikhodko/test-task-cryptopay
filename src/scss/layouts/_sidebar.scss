@@ -1,7 +1,7 @@
 @use '../abstracts/constants' as *;
 
 .sidebar {
-  width: $sidebar-width;
+  min-width: $sidebar-width;
   padding-top: 32px;
   background: $color-background;
 }

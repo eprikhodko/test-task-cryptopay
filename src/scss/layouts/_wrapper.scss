@@ -9,6 +9,8 @@
 
 .wrapper {
   width: 100%;
-  max-width: $main-content-width;
-  margin: 0 auto;
+  max-width: $main-width;
+  // margin: 0 auto;
+  padding: 0 48px;
+  // border: 1px solid;
 }
