@@ -9,7 +9,9 @@
   <body>
     <div class="wrapper-main">
       <aside class="sidebar">
-        <span class="logo sidebar__logo"></span>
+        <a href="#">
+          <span class="logo sidebar__logo"></span>
+        </a>
 
         <nav class="sidebar-nav">
           <ul class="navigation">
@@ -101,14 +103,42 @@
 
       <div class="wrapper">
         <header class="header header__main">
-          <h1 class="header__title">Assets</h1>
-          <div class="sort-by">
-            <span class="sort-by__label">Sort by:</span>
-            <div class="container-value">
-              <span class="sort-by__value">By price</span>
-              <span class="ico ico_arrow"></span>
+          <div class="header__header-wrapper">
+            <h1 class="header__title">Assets</h1>
+            <div class="sort-by sort-by__header">
+              <span class="sort-by__label">Sort by:</span>
+              <div class="container-value">
+                <span class="sort-by__value">By price</span>
+                <span class="ico ico_arrow"></span>
+              </div>
             </div>
           </div>
+
+          <button
+            class="header__button-open-nav"
+            aria-label="open navigation"
+            type="button"
+          >
+            <object
+              type="image/svg+xml"
+              data="./assets/img/icons/burger.svg"
+              class="burger-icon"
+            >
+              Your browser does not support SVG
+            </object>
+
+            <!-- <svg
+              width="30"
+              height="22"
+              viewBox="0 0 30 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line y1="21" x2="30" y2="21" stroke="#F1CDB3" stroke-width="2" />
+              <line y1="11" x2="30" y2="11" stroke="#F1CDB3" stroke-width="2" />
+              <line y1="1" x2="30" y2="1" stroke="#F1CDB3" stroke-width="2" />
+            </svg> -->
+          </button>
         </header>
 
         <main class="main-content">

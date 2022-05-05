@@ -5,6 +5,12 @@
   align-items: center;
 }
 
+.sort-by__header {
+  @media (max-width: $mobile-width) {
+    margin-top: 32px;
+  }
+}
+
 .sort-by__label {
   @include font(rem(14px), line-height(20px, 14px), 600, $color-placeholder);
   margin-right: 16px;
