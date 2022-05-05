@@ -19,9 +19,7 @@
     width: 100vw;
     min-width: $sidebar-tablet-width;
     background: $color-off-white;
-    // border: 3px solid;
     transform: translateX(0);
-    // transform: translateX(-100%);
     transition: transform 500ms;
   }
 }
