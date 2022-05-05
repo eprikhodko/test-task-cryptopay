@@ -20,8 +20,10 @@
 }
 
 .navigation__ico_active {
-  rect {
-    stroke: $color-primary-100;
+  @media (max-width: $tablet-medium-width) {
+    rect {
+      stroke: $color-primary-100;
+    }
   }
 }
 

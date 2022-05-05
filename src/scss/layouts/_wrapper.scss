@@ -3,7 +3,7 @@
 .wrapper-main {
   display: flex;
   max-width: $content-width;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0 auto;
 }
 
@@ -12,4 +12,8 @@
   max-width: $main-content-width;
   margin: 0 auto;
   padding: 0 32px;
+
+  @media (max-width: $tablet-width) {
+    padding: 0 24px;
+  }
 }

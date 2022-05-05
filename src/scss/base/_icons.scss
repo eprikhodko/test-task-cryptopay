@@ -17,12 +17,15 @@
 
 .icon-square {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 56px;
-  height: 56px;
-  background: $color-off-white;
-  border-radius: 16px;
+
+  @media (max-width: $tablet-medium-width) {
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    background: $color-off-white;
+    border-radius: 16px;
+  }
 }
 
 .ico_home {
