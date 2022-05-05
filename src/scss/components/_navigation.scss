@@ -20,7 +20,9 @@
 }
 
 .navigation__ico_active {
-  stroke: red;
+  rect {
+    stroke: $color-primary-100;
+  }
 }
 
 .navigation__link {
