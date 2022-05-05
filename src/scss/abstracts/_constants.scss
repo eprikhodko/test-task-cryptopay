@@ -1,0 +1,30 @@
+@use '../base/fonts';
+
+// Colors
+
+$color-primary-100: #4285f5;
+$color-body: #565a75;
+$color-off-white: #fff;
+$color-disabled: #898da8;
+$color-title-active: #404357;
+$color-placeholder: #898da8;
+$color-label: #6b7192;
+$color-background: #f4f5fb;
+
+// Breakpoints
+
+$content-width: 1280px;
+$sidebar-width: 224px;
+$sidebar-tablet-width: 80px;
+$main-width: 1056px;
+$main-content-width: 1024px;
+
+$tablet-big-width: 960px;
+$tablet-medium-width: 840px;
+$tablet-width: 640px;
+$mobile-big-width: 440px;
+$mobile-width: 375px;
+
+// Typography
+
+$proxima-nova-font: 'Proxima Nova', Verdana, sans-serif;

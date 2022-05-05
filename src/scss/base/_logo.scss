@@ -1,0 +1,22 @@
+@use '../abstracts/constants' as *;
+
+.logo {
+  width: 130px;
+  height: 16px;
+  background-image: url('../assets/img/Logotype.svg');
+
+  @media (max-width: $tablet-medium-width) {
+    width: 18px;
+    height: 16px;
+    background-image: url('../assets/img/sidebar-logo.svg');
+  }
+}
+
+.sidebar__logo {
+  display: block;
+  margin: 16px auto 48px;
+
+  @media (max-width: $mobile-big-width) {
+    display: none;
+  }
+}

@@ -1,0 +1,15 @@
+@use '../abstracts/constants' as *;
+
+@mixin font(
+  $font-size,
+  $line-height,
+  $weight: 600,
+  $color: $color-body,
+  $style: normal
+) {
+  color: $color;
+  font-weight: $weight;
+  font-size: $font-size;
+  font-style: $style;
+  line-height: $line-height;
+}

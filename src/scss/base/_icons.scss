@@ -1,0 +1,92 @@
+@use '../abstracts/constants' as *;
+
+.ico {
+  display: inline-block;
+}
+
+.ico_active-rectangle {
+  position: absolute;
+  width: 4px;
+  height: 56px;
+  background-image: url('../assets/img/icons/Rectangle-638.svg');
+
+  @media (max-width: $tablet-medium-width) {
+    display: none;
+  }
+}
+
+.icon-square {
+  display: flex;
+
+  @media (max-width: $tablet-medium-width) {
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    background: $color-off-white;
+    border-radius: 16px;
+  }
+
+  @media (max-width: $mobile-big-width) {
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background: $color-off-white;
+    border-radius: 16px;
+  }
+}
+
+.ico_home {
+  width: 24px;
+  height: 24px;
+  background-image: url('../assets/img/icons/sidebar/Home.svg');
+}
+
+.ico_wallet {
+  width: 24px;
+  height: 24px;
+  background-image: url('../assets/img/icons/sidebar/Wallet.svg');
+}
+
+.ico_assets {
+  width: 24px;
+  height: 24px;
+  background-image: url('../assets/img/icons/sidebar/Assets.svg');
+}
+
+.ico_recurring {
+  width: 24px;
+  height: 24px;
+  background-image: url('../assets/img/icons/sidebar/Recurring.svg');
+}
+
+.ico_card {
+  width: 24px;
+  height: 24px;
+  background-image: url('../assets/img/icons/sidebar/Card.svg');
+}
+
+.ico_service {
+  width: 24px;
+  height: 24px;
+  background-image: url('../assets/img/icons/sidebar/Service.svg');
+}
+
+.ico_history {
+  width: 24px;
+  height: 24px;
+  background-image: url('../assets/img/icons/sidebar/History.svg');
+}
+
+.ico_arrow {
+  width: 16px;
+  height: 16px;
+  background-image: url('../assets/img/icons/Arrow.svg');
+}
+
+.ico_etherium {
+  width: 32px;
+  height: 32px;
+  background-image: url('../assets/img/icons/ETH.svg');
+}

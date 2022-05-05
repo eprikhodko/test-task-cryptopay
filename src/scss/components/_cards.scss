@@ -1,0 +1,46 @@
+@use '../abstracts' as *;
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+
+  @media (max-width: $tablet-big-width) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  @media (max-width: $tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  @media (max-width: $mobile-big-width) {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+.card {
+  padding: 16px;
+  background: $color-background;
+  border-radius: 16px;
+}
+
+.card__subtitle {
+  margin-top: 4px;
+}
+
+.card__wrapper {
+  margin-left: 12px;
+}
+
+.card__currency {
+  display: flex;
+}
+
+.card__rate {
+  @include font(rem(20px), line-height(24px, 20px), 600, $color-body);
+  margin: 0;
+  margin-top: 32px;
+}
