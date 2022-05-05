@@ -4,6 +4,10 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 32px;
+
+  @media (max-width: $tablet-big-width) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .card {

@@ -4,4 +4,8 @@
   min-width: $sidebar-width;
   padding-top: 32px;
   background: $color-background;
+
+  @media (max-width: $tablet-medium-width) {
+    min-width: $sidebar-tablet-width;
+  }
 }
