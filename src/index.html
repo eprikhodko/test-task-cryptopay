@@ -7,7 +7,7 @@
     <title>Cryptopay</title>
   </head>
   <body>
-    <div class="wrapper">
+    <div class="wrapper-main">
       <aside class="sidebar">
         <img
           src="./assets/img/Logotype.svg"
@@ -40,15 +40,35 @@
           </ul>
         </nav>
       </aside>
+
       <header class="header">
-        <h1 class="header__title">Assets</h1>
-        <div class="sort-by">
-          <span class="sort-by__label">Sort by:</span>
-          <span class="sort-by__value">By price</span>
-          <span class="ico ico_arrow"></span>
+        <div class="wrapper">
+          <h1 class="header__title">Assets</h1>
+          <div class="sort-by">
+            <span class="sort-by__label">Sort by:</span>
+            <span class="sort-by__value">By price</span>
+            <span class="ico ico_arrow"></span>
+          </div>
         </div>
       </header>
-      <main class="main-content"></main>
+
+      <main class="main-content">
+        <div class="wrapper">
+          <div class="cards">
+            <div class="card">
+              <div class="currency">
+                <span class="ico ico_etherium"></span>
+                <div class="currency__wrapper">
+                  <h2 class="currency__title">Etherium</h2>
+                  <h3 class="currency__subtitle">ETH</h3>
+                </div>
+              </div>
+
+              <p class="currency__rate">$0,95</p>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
   </body>
 </html>
