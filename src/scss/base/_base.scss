@@ -14,13 +14,13 @@ h1 {
 }
 
 h2 {
-  font-weight: bold;
-  font-size: 34px;
-  line-height: 46px;
+  @include font(1rem, line-height(24px, 16px), 600, $color-body);
+  margin: 0;
+  letter-spacing: 0.16px;
 }
 
 h3 {
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 34px;
+  @include font(rem(14px), line-height(20px, 14px), 400, $color-disabled);
+  margin: 0;
+  letter-spacing: 0.16px;
 }

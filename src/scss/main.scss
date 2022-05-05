@@ -12,5 +12,6 @@
 @use 'layouts/header';
 
 // Components
-@import 'components/navigation';
-@import 'components/sort-by';
+@use 'components/navigation';
+@use 'components/sort-by';
+@use 'components/cards';

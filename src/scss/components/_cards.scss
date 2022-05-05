@@ -1,0 +1,29 @@
+@use '../abstracts' as *;
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.card {
+  padding: 16px;
+  background: $color-background;
+  border-radius: 16px;
+}
+
+.card__subtitle {
+  margin-top: 4px;
+}
+
+.card__wrapper {
+  margin-left: 12px;
+}
+
+.card__currency {
+  display: flex;
+}
+
+.card__rate {
+  @include font(rem(20px), line-height(24px, 20px), 600, $color-body);
+}
