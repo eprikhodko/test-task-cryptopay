@@ -9,6 +9,8 @@
 // Layout
 @use 'layouts/wrapper';
 @use 'layouts/sidebar';
+@use 'layouts/header';
 
 // Components
 @import 'components/navigation';
+@import 'components/sort-by';

@@ -6,3 +6,9 @@
   height: 100vh;
   margin: 0 auto;
 }
+
+.wrapper {
+  width: 100%;
+  max-width: $main-content-width;
+  margin: 0 auto;
+}
