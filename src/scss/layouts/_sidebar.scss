@@ -1,0 +1,7 @@
+@use '../abstracts/constants' as *;
+
+.sidebar {
+  width: $sidebar-width;
+  padding: 32px;
+  background: $color-background;
+}

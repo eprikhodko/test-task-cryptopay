@@ -1,6 +1,7 @@
 @use '../abstracts/constants' as *;
 
 .wrapper-main {
+  display: flex;
   max-width: $content-width;
   margin: 0 auto;
 }

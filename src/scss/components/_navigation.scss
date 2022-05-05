@@ -1,0 +1,16 @@
+@use '../abstracts/constants' as *;
+@use '../abstracts/mixins' as *;
+
+.navigation {
+  padding: 0;
+  list-style: none;
+}
+
+.navigation__link {
+  @include font(1rem, line-height(24px, 16px), 600, $color-label);
+  display: flex;
+  align-items: center;
+  color: $color-label;
+  //   padding: 0 10px;
+  text-decoration: none;
+}

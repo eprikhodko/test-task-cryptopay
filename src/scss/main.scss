@@ -3,7 +3,12 @@
 
 // Base
 @use 'base/base';
+@use 'base/logo';
+@use 'base/icons';
 
 // Layout
 @use 'layouts/wrapper';
 @use 'layouts/sidebar';
+
+// Components
+@import 'components/navigation';
