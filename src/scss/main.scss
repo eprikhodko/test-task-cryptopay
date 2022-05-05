@@ -1,2 +1,9 @@
 // Normalize
 @use 'vendors/normalize';
+
+// Base
+@use 'base/base';
+
+// Layout
+@use 'layouts/wrapper';
+@use 'layouts/sidebar';
