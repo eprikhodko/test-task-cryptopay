@@ -26,6 +26,15 @@
     background: $color-off-white;
     border-radius: 16px;
   }
+
+  @media (max-width: $mobile-big-width) {
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background: $color-off-white;
+    border-radius: 16px;
+  }
 }
 
 .ico_home {

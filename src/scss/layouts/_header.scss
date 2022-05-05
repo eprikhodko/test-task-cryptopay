@@ -1,7 +1,7 @@
 @use '../abstracts/constants' as *;
 
 .header {
-  @media (max-width: $mobile-width) {
+  @media (max-width: $mobile-big-width) {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -15,7 +15,7 @@
   border: 0;
   cursor: pointer;
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $mobile-big-width) {
     display: block;
   }
 }
@@ -29,7 +29,7 @@
   align-items: center;
   justify-content: space-between;
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $mobile-big-width) {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -38,7 +38,7 @@
 .header__main {
   margin: 40px 0 32px;
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $mobile-big-width) {
     margin: 40px 0 24px;
   }
 }

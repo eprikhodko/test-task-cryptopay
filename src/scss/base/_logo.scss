@@ -15,4 +15,8 @@
 .sidebar__logo {
   display: block;
   margin: 16px auto 48px;
+
+  @media (max-width: $mobile-big-width) {
+    display: none;
+  }
 }

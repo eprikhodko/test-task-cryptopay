@@ -9,4 +9,16 @@
   @media (max-width: $tablet-medium-width) {
     min-width: $sidebar-tablet-width;
   }
+
+  @media (max-width: $mobile-big-width) {
+    position: fixed;
+    top: 100px;
+    right: 0;
+    bottom: 0;
+    // border: 3px solid;
+    display: none;
+    width: 100vw;
+    min-width: $sidebar-tablet-width;
+    background: $color-off-white;
+  }
 }
