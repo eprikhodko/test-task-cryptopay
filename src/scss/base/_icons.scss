@@ -85,6 +85,10 @@
   background-image: url('../assets/img/icons/Arrow.svg');
 }
 
+.ico_arrow-reverse {
+  transform: rotate(180deg);
+}
+
 .ico_etherium {
   width: 32px;
   height: 32px;
