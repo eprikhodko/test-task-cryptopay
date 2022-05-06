@@ -80,8 +80,12 @@ const mapCurrencies = async () => {
 
   // code for sort by filter
   const SORT_BY = document.querySelector('.sort-by__value');
+  const SORT_BY_ARROW_ICON = document.querySelector('.ico_arrow');
+
+  //   .ico_arrow-reverse
 
   SORT_BY.addEventListener('click', () => {
+    SORT_BY_ARROW_ICON.classList.toggle('ico_arrow-reverse');
     const reverseArray = currenciesData.reverse();
 
     CARDS.innerHTML = '';
