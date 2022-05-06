@@ -20,7 +20,7 @@ const mapCurrencies = async () => {
   //   console.log(currenciesData);
 
   const createCard = (currencyData) => {
-    // console.log(currencyData);
+    console.log(currencyData);
     const createCardTemplate = () => {
       const card = document.createElement('div');
       card.classList.add('card');
@@ -40,11 +40,21 @@ const mapCurrencies = async () => {
 
       const cardTitle = document.createElement('h2');
       cardTitle.innerHTML = `${
-        currencyData.fullName ? currencyData.fullName : currencyData.pair
+        currencyData.fullName
+          ? currencyData.fullName
+          : currencyData.pair.slice(0, -4)
       }`;
       cardTitle.classList.add('card__title');
-
       cardWrapper.appendChild(cardTitle);
+
+      const cardSubtitle = document.createElement('h3');
+      cardSubtitle.innerHTML = `${
+        currencyData.fullName
+          ? currencyData.fullName
+          : currencyData.pair.slice(0, -4)
+      }`;
+      cardSubtitle.classList.add('card__subtitle');
+      cardWrapper.appendChild(cardSubtitle);
 
       card.appendChild(cardCurrency);
 
