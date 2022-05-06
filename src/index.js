@@ -77,9 +77,20 @@ const mapCurrencies = async () => {
   for (let i = 0; i < currenciesData.length; i += 1) {
     setCards(currenciesData[i]);
   }
-};
 
-console.log(CARDS);
+  // code for sort by filter
+  const SORT_BY = document.querySelector('.sort-by__value');
+
+  SORT_BY.addEventListener('click', () => {
+    const reverseArray = currenciesData.reverse();
+
+    CARDS.innerHTML = '';
+
+    for (let i = 0; i < reverseArray.length; i += 1) {
+      setCards(reverseArray[i]);
+    }
+  });
+};
 
 mapCurrencies();
 
