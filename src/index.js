@@ -18,6 +18,9 @@ const fetchCurrenciesData = async () => {
 const mapCurrencies = async () => {
   const currenciesData = await fetchCurrenciesData();
   //   console.log(currenciesData);
+  currenciesData.sort(function (a, b) {
+    return b.rate - a.rate;
+  });
 
   const createCard = (currencyData) => {
     // console.log(currencyData);
