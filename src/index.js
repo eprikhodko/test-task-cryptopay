@@ -1,26 +1,6 @@
 import './scss/main.scss';
 
-// fetch data from API
-
-// const url =
-//   'https://www.binance.com/bapi/asset/v1/public/asset-service/product/currency';
-
-// fetch(url)
-//   .then((response) => {
-//     return response.json();
-//   })
-//   .then((data) => {
-//     let currencies = data.data;
-//     console.log(currencies);
-//     // console.log(currencies.data);
-
-//     currencies.map((item) => {
-//       console.log(item);
-//     });
-//   })
-//   .catch(function (error) {
-//     console.log(error, 'error');
-//   });
+const CARDS = document.querySelector('.cards');
 
 const fetchCurrenciesData = async () => {
   try {
@@ -37,31 +17,82 @@ const fetchCurrenciesData = async () => {
 
 const mapCurrencies = async () => {
   const currenciesData = await fetchCurrenciesData();
-  console.log(currenciesData);
+  //   console.log(currenciesData);
+
+  const createCard = (currencyData) => {
+    // console.log(currencyData);
+    const createCardTemplate = () => {
+      const card = document.createElement('div');
+      card.classList.add('card');
+
+      const cardCurrency = document.createElement('div');
+      cardCurrency.classList.add('card__currency');
+
+      const cardCurrencyIcon = document.createElement('span');
+      cardCurrencyIcon.classList.add('ico');
+      cardCurrencyIcon.classList.add('ico_etherium');
+
+      const cardWrapper = document.createElement('div');
+      cardWrapper.classList.add('card__wrapper');
+
+      cardCurrency.appendChild(cardCurrencyIcon);
+      cardCurrency.appendChild(cardWrapper);
+
+      const cardTitle = document.createElement('h2');
+      cardTitle.innerHTML = `${
+        currencyData.fullName ? currencyData.fullName : currencyData.pair
+      }`;
+      cardTitle.classList.add('card__title');
+
+      cardWrapper.appendChild(cardTitle);
+
+      card.appendChild(cardCurrency);
+
+      return card;
+    };
+
+    // create currency card
+    const card = createCardTemplate();
+
+    return card;
+  };
+
+  const setCards = (currencyData) => {
+    const card = createCard(currencyData);
+
+    CARDS.appendChild(card);
+  };
+
+  // create cards elements
+  for (let i = 0; i < currenciesData.length; i += 1) {
+    setCards(currenciesData[i]);
+  }
 };
+
+console.log(CARDS);
 
 mapCurrencies();
 
 // code for burger menu
-const openButton = document.querySelector('.header__button-open-nav');
-const closeButton = document.querySelector('.sidebar__button-close-nav');
-const nav = document.querySelector('.sidebar');
-const navItems = document.querySelectorAll('.navigation__item');
-const body = document.querySelector('body');
+const OPEN_BUTTON = document.querySelector('.header__button-open-nav');
+const CLOSE_BUTTON = document.querySelector('.sidebar__button-close-nav');
+const NAV = document.querySelector('.sidebar');
+const NAV_ITEMS = document.querySelectorAll('.navigation__item');
+const BODY = document.querySelector('body');
 
-openButton.addEventListener('click', () => {
-  nav.classList.add('navigation-open');
-  body.classList.add('disable-scroll');
+OPEN_BUTTON.addEventListener('click', () => {
+  NAV.classList.add('navigation-open');
+  BODY.classList.add('disable-scroll');
 });
 
-closeButton.addEventListener('click', () => {
-  nav.classList.remove('navigation-open');
-  body.classList.remove('disable-scroll');
+CLOSE_BUTTON.addEventListener('click', () => {
+  NAV.classList.remove('navigation-open');
+  BODY.classList.remove('disable-scroll');
 });
 
-navItems.forEach((item) => {
+NAV_ITEMS.forEach((item) => {
   item.addEventListener('click', () => {
-    nav.classList.remove('navigation-open');
-    body.classList.remove('disable-scroll');
+    NAV.classList.remove('navigation-open');
+    BODY.classList.remove('disable-scroll');
   });
 });
